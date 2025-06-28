@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Chewy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(100deg, #eb7790, #eef0d0);
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.search-panel{
+    width: 740px;
+    margin: 100px auto;
+    display: flex;
+}
+
+.search-input{
+    width: 80%;
+    box-sizing: border-box;
+    padding: 14px;
+    border: 1px solid #cccccc36;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 16px;
+    font-weight: normal;
+        border-radius: 40px 0px 0px 40px ;
+
+    
+}
+.search-input:focus{
+    outline: none;
+    border: none;
+
+}
+
+#search{
+    width: 20%;
+    background-color: rgb(109, 102, 102);
+    color: #faf9f9;
+    border: none;
+    font-size: 14px;
+    padding: 15px;
+    font-weight: 600;
+    border-radius: 0px 40px 40px 0px ;
+    }
+
+
+.output{
+    width: 780px;
+    height: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 10px 20px 5px;
+    padding: 50px 150px;
+    display: none;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: -10px;
+    font-size: 16px;
+}
+#condition{
+    margin-bottom: 50px;
+    font-size: 20px;
+    
+}
+.weather{
+margin: 50px 0px;
+}
+p{
+    margin-bottom: 10px;
+
+}
+
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .search-panel {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+  }
+
+  .search-input {
+    width: 100%;
+    border-radius: 40px;
+    margin-bottom: 10px;
+  }
+
+  #search {
+    width: 100%;
+    border-radius: 40px;
+  }
+
+  .output {
+    width: 90%;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+  }
+
+  #condition {
+    font-size: 18px;
+  }
+
+  .weather h3 {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  #date {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  img#icon {
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+}

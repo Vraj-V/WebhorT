@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="bg-video">
+  <source src="https://cdn.pixabay.com/video/2017/01/13/7328-199383367_large.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+    <div class="container">
+        <div class="search-panel">
+            <input type="text" class="search-input" id="input" placeholder="Enter city">
+            <button id='search' onclick="weatherShow()">Search City</button>
+        </div>
+    </div>
+
+    <div class="output" id="output">
+        <div class="content">
+            <div class="city-name" id="name"><h1>Vadodara</h1></div>
+            <br>
+            <div id="date">Date: 21/09/2101</div>
+        </div>
+
+            <div class="weather">
+                <div id="condition">Patchy rain nearby <img id="icon" /> </div>
+                <h3>Humidity: <Span id="humidity"> 78</Span></h3>
+                <h3>country: <Span id="country"> India</Span></h3>
+                <h3>Region: <Span id="region"> Gujarat</Span></h3>
+                <h3>Location: Lat <Span id="lat"> 22.3</Span> Loc<Span id="lon"> 77.3</Span>  </h3>
+                <h3>Wind Direction: <Span id="wind_mph">16.78 </Span></h3>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
