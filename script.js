@@ -1,4 +1,4 @@
-let url = 'http://api.weatherapi.com/v1/current.json?key=8e5445931a464c1f8e7111542252806&q=&aqi=yes';
+let url = 'https://api.weatherapi.com/v1/current.json?key=8e5445931a464c1f8e7111542252806&q=&aqi=yes';
 
 let Name = document.getElementById('name');
 let DateTime = document.getElementById('date');
